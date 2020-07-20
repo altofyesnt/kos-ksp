@@ -1,0 +1,26 @@
+clearscreen.
+until false {//really basic script and just an example 
+    set x to 10.
+    if thrl>0 set {
+    x to -10.
+    }
+    cdir to myst:dir
+    cpit to myst:pitch
+    set latc to dilat*x.
+    set lngc to dilng*x.
+    set dir to cdir+latc.
+    set pit to cpit+lngc.
+    if pit<30 {
+        set pit to 30.
+    }
+    if pit>70 {
+        set pit to 70.
+    }
+    if dir<70 {
+        set dir to 70.
+    }
+    if dir>110 {
+        set dir to 110.
+    } 
+    set myst to heading(dir,pit)
+}
